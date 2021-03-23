@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AA9E0679-3F56-4ED2-91EB-94000343749B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>DB2019</RootNamespace>
+    <AssemblyName>DB2019</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MaterialSkin, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialSkin.0.2.1\lib\MaterialSkin.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data">
+      <HintPath>..\..\..\Documents\database\MySql.Data.DLL</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="change_Pass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="change_Pass.Designer.cs">
+      <DependentUpon>change_Pass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formactivity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formactivity.Designer.cs">
+      <DependentUpon>formactivity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formreturn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formreturn.Designer.cs">
+      <DependentUpon>formreturn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form_borrow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form_borrow.Designer.cs">
+      <DependentUpon>form_borrow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmaddborrow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmaddborrow.Designer.cs">
+      <DependentUpon>frmaddborrow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmaddequipments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmaddequipments.Designer.cs">
+      <DependentUpon>frmaddequipments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class1.cs" />
+    <Compile Include="frmaccounts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmaccounts.Designer.cs">
+      <DependentUpon>frmaccounts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmaddaccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmaddaccount.Designer.cs">
+      <DependentUpon>frmaddaccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmequipments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmequipments.Designer.cs">
+      <DependentUpon>frmequipments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmlogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmlogin.Designer.cs">
+      <DependentUpon>frmlogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmlogs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmlogs.Designer.cs">
+      <DependentUpon>frmlogs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmmain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmmain.Designer.cs">
+      <DependentUpon>frmmain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="change_Pass.resx">
+      <DependentUpon>change_Pass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formactivity.resx">
+      <DependentUpon>formactivity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formreturn.resx">
+      <DependentUpon>formreturn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form_borrow.resx">
+      <DependentUpon>form_borrow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmaddborrow.resx">
+      <DependentUpon>frmaddborrow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmaddequipments.resx">
+      <DependentUpon>frmaddequipments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmaccounts.resx">
+      <DependentUpon>frmaccounts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmaddaccount.resx">
+      <DependentUpon>frmaddaccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmequipments.resx">
+      <DependentUpon>frmequipments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmlogin.resx">
+      <DependentUpon>frmlogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmlogs.resx">
+      <DependentUpon>frmlogs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmmain.resx">
+      <DependentUpon>frmmain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-assignment-return-50%281%29.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
